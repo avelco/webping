@@ -1,0 +1,12 @@
+{
+    "name": "webping",
+    "main": ".svelte-kit/cloudflare/_worker.js",
+	"compatibility_date": "2021-11-12",
+    "assets": {
+      "binding": "ASSETS",
+      "directory": ".svelte-kit/cloudflare"
+    },
+    "observability": {
+      "enabled": true
+    }
+  }
