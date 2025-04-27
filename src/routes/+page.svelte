@@ -78,13 +78,13 @@
       on:click={addDomain}
       class="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-semibold px-5 py-3 rounded transition"
     >
-      Add Domain
+      Agregar dominio
     </button>
     <button
       on:click={initialCheck}
       class="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-white font-semibold px-5 py-3 rounded transition"
     >
-      Refresh All
+      Refrescar todo
     </button>
   </div>
 
@@ -99,16 +99,16 @@
                 <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
                 <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"></path>
               </svg>
-              <span class="text-sm text-gray-500" title={domain.reason ?? 'Loading...'}>Checking…</span>
+              <span class="text-sm text-gray-500" title={domain.reason ?? 'Loading...'}>Verificando…</span>
             </div>
           {:else}
             <span class="inline-block px-3 py-1 rounded-full text-sm font-medium transition-colors {domain.status === 'up' ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}" title={domain.reason ?? domain.status}>
-              {domain.status === 'up' ? 'Up' : 'Down'}
+              {domain.status === 'up' ? 'OK' : 'Down'}
             </span>
           {/if}
         </div>
         <div class="mt-4 text-gray-700 dark:text-gray-300">
-          <p class="text-sm">Response Time:</p>
+          <p class="text-sm">Tiempo de respuesta:</p>
           {#if domain.loading}
             <p class="text-lg font-medium">-- ms</p>
           {:else}
