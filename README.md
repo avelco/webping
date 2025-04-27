@@ -1,28 +1,35 @@
-# sv
+# WebPing
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A simple web application to monitor the status and response time of a list of domains.
 
-## Creating a project
+## Features
 
-If you're seeing this, you've probably already done this step. Congrats!
+*   Add domains to monitor via the input field.
+*   Displays real-time status (Up ✅ / Down ❌) for each domain.
+*   Shows response time in milliseconds for successful checks.
+*   Provides detailed status reasons on hover over the status icon (e.g., OK, Timeout, DNS/Network Error, HTTP Error, SSL Error).
+*   Uses a retry mechanism (up to 3 attempts) for failed checks.
+*   Basic responsive design.
 
-```bash
-# create a new project in the current directory
-npx sv create
+## Technologies Used
 
-# create a new project in my-app
-npx sv create my-app
-```
+*   [SvelteKit](https://kit.svelte.dev/): Web application framework.
+*   [Svelte 5](https://svelte.dev/): UI compiler.
+*   [TypeScript](https://www.typescriptlang.org/): Superset of JavaScript for static typing.
+*   [Vite](https://vitejs.dev/): Frontend build tool.
+*   [PNPM](https://pnpm.io/): Package manager.
+*   Node.js `fetch`: For making HTTP requests in the backend API route.
+*   Basic CSS/HTML
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Once you've cloned the project and installed dependencies with `pnpm install`, start a development server:
 
 ```bash
-npm run dev
+pnpm run dev
 
 # or start the server and open the app in a new browser tab
-npm run dev -- --open
+pnpm run dev -- --open
 ```
 
 ## Building
@@ -30,9 +37,9 @@ npm run dev -- --open
 To create a production version of your app:
 
 ```bash
-npm run build
+pnpm run build
 ```
 
-You can preview the production build with `npm run preview`.
+You can preview the production build with `pnpm run preview`.
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
