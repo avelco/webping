@@ -14,7 +14,6 @@
     { name: 'app.conyko.com', status: 'down', responseTime: 0, loading: false, reason: null },
     { name: 'cobranti.com', status: 'down', responseTime: 0, loading: false, reason: null },
     { name: 'app.cobranti.com', status: 'down', responseTime: 0, loading: false, reason: null },
-    { name: 'api.conyko.com/docs/api', status: 'down', responseTime: 0, loading: false, reason: null },
     { name: 'crm.cobranti.com', status: 'down', responseTime: 0, loading: false, reason: null },
     { name: 'api.crm.cobranti.com', status: 'down', responseTime: 0, loading: false, reason: null },
   ];
